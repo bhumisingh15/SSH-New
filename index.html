@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        1. cd ~/.ssh
+        2. ls -a
+        3. ssh-keygen -t rsa -b 2048 -C "your_email@example.com"
+        4. mayankarora@Mayanks-MacBook-Pro .ssh % ssh-keygen -t rsa -b 2048 -C "mayank.arora@hotwireglobal.com"
+        Generating public/private rsa key pair.
+        Enter file in which to save the key (/Users/mayankarora/.ssh/id_rsa): /Users/mayankarora/.ssh/id_test(key name)
+        5. Enter
+        6. enter
+        7. cat id_test.pub // For viewing the key in terminal
+        8. pbcopy < ~/.ssh/id_test.pub
+        9. public key will go to the github accoiunt
+        10. git config core.sshCommand "ssh -i ~/.ssh/id_test -o IdentitiesOnly=yes"
+    </p>
+</body>
+</html>
